@@ -1,16 +1,28 @@
-<div>
-    <input type="time" id="timeInput" name="timeInput" [(ngModel)]="timeInput"
-    placeholder="HH:MM:SS" min="00:02:00" [disabled] = "timerOn" max="23:59:59" required step=1/>
-    <div *ngIf="timeInput.errors?.min">
-        2 minutes minimum duration.
-      </div>
-    <button (click)="onClickStart()" [disabled] = "timerOn">Start</button>
-    <button (click)="onClickStop()" [disabled] = "!timerOn">Stop</button>
+<div class="container">
+    <form name="form" [formGroup]="theForm">
+     <div class="form-group">
+          <h1>CountDown</h1>
+          <input type="time" id="timeInput" class="form-control"  placeholder="HH:MM:SS"  step=1 formControlName="timeInput"/>
+          <div class="alert alert-danger" *ngIf="theForm.get('timeInput').hasError('required')">This field is required</div>
+          <div class="alert alert-danger" *ngIf="theForm.get('timeInput').hasError('lessThan2')">The time must be 2 or more minutes long</div>
+          <button (click)="onClickStart()" id="btnStart"  [disabled] = "timerOn || !theForm.valid" class="btn btn-success"> Start x 10</button>
+          <button (click)="onClickStop()" id="btnStop" class="btn btn-danger" [disabled] = "!timerOn || !theForm.valid" >Stop</button>
 
-    <h1>Time Remaining:{{ timeRemaining }}</h1>
-    <div id="output">
-      <ul>
-          <li *ngFor="let notification of notifications">{{ notification }}</li>
-      </ul>
-    </div>
+          <h2>Time Remaining:{{ timeRemaining }}</h2>
+        </div>
+      </form>
+      <div class='row'>
+          <div id="output" class="col-sm">
+              <h3>This is notification at each minute</h3>
+              <ul>
+                  <li *ngFor="let notification of notifications">{{ notification }}</li>
+              </ul>
+            </div>
+            <div id="serverdata" class="col-sm">
+                <h3>This is all notifications from the server</h3>
+                <ul>
+                    <li *ngFor="let notificationlog of serverlogdump">{{ notificationlog.timeArrived }} : [ {{ notificationlog.notification }} ]</li>
+                </ul>
+            </div>         
+          </div>
 </div>

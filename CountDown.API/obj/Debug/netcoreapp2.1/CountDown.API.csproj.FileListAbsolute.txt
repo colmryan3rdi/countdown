@@ -1,0 +1,14 @@
+D:\Workspaces\countdown\CountDown.API\bin\Debug\netcoreapp2.1\CountDown.API.deps.json
+D:\Workspaces\countdown\CountDown.API\bin\Debug\netcoreapp2.1\CountDown.API.runtimeconfig.json
+D:\Workspaces\countdown\CountDown.API\bin\Debug\netcoreapp2.1\CountDown.API.runtimeconfig.dev.json
+D:\Workspaces\countdown\CountDown.API\bin\Debug\netcoreapp2.1\CountDown.API.dll
+D:\Workspaces\countdown\CountDown.API\bin\Debug\netcoreapp2.1\CountDown.API.pdb
+D:\Workspaces\countdown\CountDown.API\obj\Debug\netcoreapp2.1\CountDown.API.csprojAssemblyReference.cache
+D:\Workspaces\countdown\CountDown.API\obj\Debug\netcoreapp2.1\CountDown.API.csproj.CoreCompileInputs.cache
+D:\Workspaces\countdown\CountDown.API\obj\Debug\netcoreapp2.1\CountDown.API.RazorAssemblyInfo.cache
+D:\Workspaces\countdown\CountDown.API\obj\Debug\netcoreapp2.1\CountDown.API.RazorAssemblyInfo.cs
+D:\Workspaces\countdown\CountDown.API\obj\Debug\netcoreapp2.1\CountDown.API.AssemblyInfoInputs.cache
+D:\Workspaces\countdown\CountDown.API\obj\Debug\netcoreapp2.1\CountDown.API.AssemblyInfo.cs
+D:\Workspaces\countdown\CountDown.API\obj\Debug\netcoreapp2.1\CountDown.API.RazorTargetAssemblyInfo.cache
+D:\Workspaces\countdown\CountDown.API\obj\Debug\netcoreapp2.1\CountDown.API.dll
+D:\Workspaces\countdown\CountDown.API\obj\Debug\netcoreapp2.1\CountDown.API.pdb
